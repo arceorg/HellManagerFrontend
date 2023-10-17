@@ -12,10 +12,10 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 
 export const Header = () => {
   const navDropDownTitle = (
-    <FontAwesomeIcon icon={faBars} className="menu-icon-color" />
+    <FontAwesomeIcon icon={faBars} className="menu-icon" />
   );
   return (
-    <Navbar expand="lg" className="bg-body-tertiary header">
+    <Navbar expand="lg" className="bg-body-tertiary primary">
       <Container fluid>
         <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }}>
           <NavDropdown title={navDropDownTitle} className="custom-dropdown">
@@ -42,7 +42,7 @@ export const Header = () => {
             </InputGroup>
           </Form.Group>
         </Form>
-        <Button className="user-button">
+        <Button className="user-button primary">
           <FontAwesomeIcon icon={faUser} className="user-icon" />
         </Button>
       </Container>

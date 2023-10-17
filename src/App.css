@@ -1,0 +1,10 @@
+.primary {
+  background-color: #2180bf !important;
+  color: white !important;
+}
+
+@media only screen and (width <= 479px) {
+  .mobile-hide {
+    display: none !important;
+  }
+}
