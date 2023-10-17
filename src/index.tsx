@@ -9,6 +9,6 @@ root.render(
   <React.StrictMode>
     <App />
 
-    <h1>test</h1>
+    <h1>testing</h1>
   </React.StrictMode>,
 );
