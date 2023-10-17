@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,7 +15,9 @@
     "@types/node": "^16.18.48",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "bootstrap": "^5.3.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.9.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
@@ -21,8 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier --write '{src,test,scripts}/**/*.{tsx,jsx,js}'",
-    "fix-lint": "eslint '*/**/*.{ts,tsx,jsx}' --quiet --fix && npm run prettier"
+    "prettier": "prettier --write '{src,test,scripts}/**/*.{tsx,jsx,js,css}'",
+    "fix-lint": "npm run prettier && npx stylelint '**/*.css' && eslint '*/**/*.{ts,tsx,jsx,js}' --quiet --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +55,9 @@
     "eslint": "^8.51.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.33.2",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^11.0.0"
   }
 }

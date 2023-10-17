@@ -1,0 +1,30 @@
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.input-group-text {
+  background-color: white;
+  border: none;
+}
+
+.header {
+  background-color: #2180bf !important;
+}
+
+.menu-icon-color {
+  color: white !important;
+}
+
+.user-button {
+  margin: 0% 4rem 0% 7rem;
+  border: 2px solid rgb(255 255 255);
+  border-radius: 20rem;
+}
+
+input[type="search"] {
+  background: white;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  border: none;
+}
