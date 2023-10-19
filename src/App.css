@@ -3,6 +3,10 @@
   color: white !important;
 }
 
+.text-font-size {
+  font-size: 0.75em;
+}
+
 @media only screen and (width <= 479px) {
   .mobile-hide {
     display: none !important;
