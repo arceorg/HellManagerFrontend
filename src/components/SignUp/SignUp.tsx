@@ -15,7 +15,8 @@ export const SignUp = () => {
           </Form.Label>
         </Form.Group>
 
-        <Form.Group as={Row}
+        <Form.Group
+          as={Row}
           className="mb-3 mt-3"
           controlId="formPlaintextEmail"
         >
@@ -27,8 +28,8 @@ export const SignUp = () => {
           </Col>
         </Form.Group>
 
-
-        <Form.Group as={Row}
+        <Form.Group
+          as={Row}
           className="mb-3 mt-3"
           controlId="formPlaintextEmail"
         >
@@ -53,7 +54,7 @@ export const SignUp = () => {
             FECHA NACIMIENTO
           </Form.Label>
           <Col sm="12">
-            <Form.Control type="date"  />
+            <Form.Control type="date" />
           </Col>
         </Form.Group>
         <Form.Group className="text-center">

@@ -1,0 +1,10 @@
+hr {
+  height: 1.8px;
+  color: black;
+  background-color: black;
+  border-color: black;
+}
+
+.menu-buttons {
+  width: 13%;
+}
