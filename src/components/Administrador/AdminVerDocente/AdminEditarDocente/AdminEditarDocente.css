@@ -1,0 +1,70 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+.b{
+    margin-bottom : 10px; /* Agrega margen inferior para separar los botones */
+    margin-top: 50px;
+    margin-right: 5px;
+  }
+  
+  .principal{
+    margin-left: 25px;
+  }
+
+
+
+
+  .contenedor {
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    align-items: center;
+    background-color: #a3c5f8;
+  }
+
+  .info{
+    display: flex;
+    margin:20px;
+  }
+
+  .perfil {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .foto img {
+    width: 50px; /* Ajusta el tamaño de la foto según tus necesidades */
+    height: 50px; /* Ajusta el tamaño de la foto según tus necesidades */
+    border-radius: 50%; /* Para hacer un círculo con la foto */
+    margin-right: 10px; /* Espacio entre la foto y el nombre */
+  }
+  
+  .nombre {
+    font-size: 18px;
+    margin-left: 15px;
+  }
+  
+  .informacion {
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    display: flex;
+  }
+
+  .boton-editar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
