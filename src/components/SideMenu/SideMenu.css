@@ -6,5 +6,7 @@ hr {
 }
 
 .menu-buttons {
-  width: 13%;
+  width: 50%;
+  background-color: #2180bf;
+  border-color: azure;
 }
