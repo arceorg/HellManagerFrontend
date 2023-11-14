@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { SideMenuContent } from "../../utilities/MenuContents";
 import { Button, Col, Row } from "react-bootstrap";
 import "./SideMenu.css";
+import { MyContext } from "../../context/Provider";
 
 interface SideMenuProps {
   menuContent: SideMenuContent;
@@ -9,6 +10,7 @@ interface SideMenuProps {
 
 export const SideMenu = (props: SideMenuProps) => {
   const { menuContent } = props;
+  const { context, setContext } = useContext(MyContext);
   return (
     <body className="p-4">
       {Object.keys(menuContent).map((menuItem) => {
@@ -21,7 +23,15 @@ export const SideMenu = (props: SideMenuProps) => {
                 {Object.keys(menuContent[menuItem]).map((section) => {
                   return (
                     <Col key={section} className="mb-3">
-                      <Button className="menu-buttons btn-secondary">
+                      <Button
+                        onClick={() => {
+                          setContext({
+                            ...context,
+                            view: menuContent[menuItem][section],
+                          });
+                        }}
+                        className="menu-buttons"
+                      >
                         {section}
                       </Button>
                     </Col>
