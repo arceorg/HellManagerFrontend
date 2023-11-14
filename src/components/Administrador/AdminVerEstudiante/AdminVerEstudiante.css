@@ -1,0 +1,68 @@
+.nombre{
+    width: 50%;
+  }
+  .izq-docente, .izq-estudiante{
+    margin-bottom : 10px; /* Agrega margen inferior para separar los botones */
+    margin-top: 50px;
+    margin-right: 5px;
+    }
+    
+    .stats-box{
+      margin-top: 150px;
+    }
+    
+    .principal{
+      margin-left: 25px;
+    }
+  
+  
+    .contenedor {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #f0f0f0;
+      margin-top: 50px;
+      border-radius: 5px;
+      flex-direction: column;
+    }
+    
+    .barraBusqueda {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      flex-grow: 1;
+      width: 60%;
+      margin-right: 10px; /* Espacio entre la barra de búsqueda y el botón de búsqueda */
+      margin-bottom: 15px;
+    }
+    
+    .botonBuscar {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .estudiante{
+      display: flex;
+      justify-content: center; /* Centra verticalmente */
+      align-items: center; /* Centra horizontalmente */
+      background-color: #e0e0e0;
+      padding: 10px;
+      border: 1px solid #bbb;
+      border-radius: 5px;
+      padding: 30px;
+    }
+  
+    .listado-estudiantes{
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centra verticalmente */
+    }
+  
+    .b{
+      display: flex;
+      justify-content: center; /* Centra verticalmente */
+      margin-right: 10px;
+    }

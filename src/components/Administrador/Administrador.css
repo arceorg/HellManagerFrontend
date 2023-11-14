@@ -1,0 +1,14 @@
+
+.b{
+  margin-bottom : 10px; /* Agrega margen inferior para separar los botones */
+  margin-top: 50px;
+  margin-right: 5px;
+}
+
+.stats-box{
+  margin-top: 150px;
+}
+
+.principal{
+  margin-left: 25px;
+}
