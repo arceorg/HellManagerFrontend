@@ -12,7 +12,10 @@ interface MyContextProps {
   setContext: any;
 }
 
-export const MyContext = createContext<MyContextProps >({context: null, setContext: null});
+export const MyContext = createContext<MyContextProps>({
+  context: null,
+  setContext: null,
+});
 
 interface MyContextProviderProps {
   children: ReactNode;

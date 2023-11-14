@@ -10,7 +10,7 @@ interface SideMenuProps {
 
 export const SideMenu = (props: SideMenuProps) => {
   const { menuContent } = props;
-  const {context, setContext} = useContext(MyContext);
+  const { context, setContext } = useContext(MyContext);
   return (
     <body className="p-4">
       {Object.keys(menuContent).map((menuItem) => {

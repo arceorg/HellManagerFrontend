@@ -5,10 +5,10 @@ import { studentMenuSideContent } from "../../utilities/MenuContents";
 import "./student.css";
 import { MyContext } from "../../context/Provider";
 
-export const  StudenView = () => {
+export const StudenView = () => {
   const { context } = useContext(MyContext);
   const jsxToRender = context?.view();
-  
+
   return (
     <div className="main">
       <Row style={{ height: "80vh" }}>
@@ -16,7 +16,7 @@ export const  StudenView = () => {
           <SideMenu menuContent={studentMenuSideContent} />
         </Col>
         <Col xs={9} style={{ height: "100%" }}>
-          { jsxToRender }
+          {jsxToRender}
         </Col>
       </Row>
     </div>

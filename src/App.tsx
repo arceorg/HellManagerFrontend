@@ -7,7 +7,6 @@ import { StudenView } from "./views/student";
 import { MyContextProvider } from "./context/Provider";
 
 function App() {
-
   return (
     <body>
       <MyContextProvider>
