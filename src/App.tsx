@@ -9,7 +9,10 @@ import { MyContextProvider } from "./context/Provider";
 function App() {
   return (
     <body>
-      <Header />
+      <MyContextProvider> // probar todo dentro de esta etiqueta MyContextProvider
+        <Header />
+        <StudenView />
+      </MyContextProvider>
     </body>
   );
 }
