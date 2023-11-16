@@ -9,7 +9,9 @@ export const Administrador = () => {
           <div className="col-md-2">
             <div className="botones-izq">
               <button className="btn btn-primary b izq-docente">Docente</button>
-              <button className="btn btn-primary b izq-estudiante">Estudiante</button>
+              <button className="btn btn-primary b izq-estudiante">
+                Estudiante
+              </button>
             </div>
           </div>
           <div className="col-md-9 principal">
@@ -32,9 +34,15 @@ export const Administrador = () => {
                   {/* Aquí puedes agregar estadísticas para estudiantes */}
                 </div>
                 <div className="seccion-botones">
-                  <button className="btn b btn-primary">Agregar Estudiante</button>
-                  <button className="btn b btn-danger">Eliminar Estudiante</button>
-                  <button className="btn b btn-info">Modificar Estudiante</button>
+                  <button className="btn b btn-primary">
+                    Agregar Estudiante
+                  </button>
+                  <button className="btn b btn-danger">
+                    Eliminar Estudiante
+                  </button>
+                  <button className="btn b btn-info">
+                    Modificar Estudiante
+                  </button>
                 </div>
               </div>
             </div>
@@ -44,4 +52,3 @@ export const Administrador = () => {
     </main>
   );
 };
-  

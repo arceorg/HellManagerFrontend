@@ -10,7 +10,9 @@ export const AdminEditarDocente = () => {
           <div className="col-md-2">
             <div className="botones-izq">
               <button className="btn btn-primary b izq-docente">Docente</button>
-              <button className="btn btn-primary b izq-estudiante">Docente</button>
+              <button className="btn btn-primary b izq-estudiante">
+                Docente
+              </button>
             </div>
           </div>
           <div className="col -md-10 contenedor">
@@ -33,4 +35,3 @@ export const AdminEditarDocente = () => {
     </main>
   );
 };
-  
