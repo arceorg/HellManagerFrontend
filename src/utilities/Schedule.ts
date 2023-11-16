@@ -32,11 +32,15 @@ export const scheduleDataConstructor = (scheduleDbData: SchedulePerDay[]) : Sche
     const startDate = new Date(currentStartWeekDate);
     startDate.setDate(startDate.getDate() + schedulePerDay.day);
     const endDate = new Date(startDate);
-    const from = schedulePerDay.from.split(":");
-    const to = schedulePerDay.to.split(":");
+    const from = schedulePerDay.from.split(":").map(Number);
+    const to = schedulePerDay.to.split(":").map(Number);
 
-    startDate.setHours(parseInt(from[0]));
-    endDate.setHours(parseInt(to[0]));
+    startDate.setHours(from[0]);
+    endDate.setHours(to[0]);
+
+    startDate.setMinutes(from[1]);
+    endDate.setMinutes(to[1]);
+
     return {
       startDate: startDate.toISOString(),
       endDate: endDate.toISOString(),

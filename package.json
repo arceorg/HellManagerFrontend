@@ -29,8 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier --write '{src,test,scripts}/**/*.{tsx,jsx,js,css}'",
-    "fix-lint": "npx stylelint '**/*.css' && eslint '*/**/*.{ts,tsx,jsx,js}' --quiet --fix && npm run prettier"
+    "prettier": "prettier --write '{src,test,scripts}/**/*.{tsx,jsx,js}'",
+    "fix-lint": "eslint '*/**/*.{ts,tsx,jsx,js}' --quiet --fix && npm run prettier"
   },
   "eslintConfig": {
     "extends": [

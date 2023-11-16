@@ -1,0 +1,13 @@
+.grade-square{
+    border: 2px solid #00000048;
+    border-radius: 5px;
+}
+
+.subject-name {
+    background-color: #78b5dde1;
+    color: white;
+}
+
+.final-grade {
+    justify-content: end;
+}

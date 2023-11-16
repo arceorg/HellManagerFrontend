@@ -1,6 +1,7 @@
 import React from "react";
 import { Login } from "../components/Login/login";
 import { Schedule } from "../components/Scheduler/Schedule";
+import { Grades } from "../components/Grades/Grades";
 
 export type SideMenuContent = Record<
   string,
@@ -20,7 +21,7 @@ export const teacherMenuSideContent: SideMenuContent = {
 export const studentMenuSideContent: SideMenuContent = {
   Academico: {
     Horario: Schedule,
-    Notas: Login,
+    Notas: Grades,
   },
   Matricula: {
     Materias: Login,
