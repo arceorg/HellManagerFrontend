@@ -29,7 +29,9 @@ export const Grades = () => {
                   activity += 1;
                   return (
                     <Row className="" key={activity}>
-                      <Col><small>Actividad {activity}</small></Col>
+                      <Col>
+                        <small>Actividad {activity}</small>
+                      </Col>
                       <Col className="d-flex justify-content-end">
                         <small>{note.percentage}%</small>
                       </Col>
