@@ -2,10 +2,12 @@ import React from "react";
 import { Login } from "../components/Login/login";
 import { Schedule } from "../components/Scheduler/Schedule";
 import { Grades } from "../components/Grades/Grades";
+import { SignatureSuscribe } from "../components/SignatureSuscribe/Signatures";
+import { TeacherProfile } from "../components/TeacherProfile/TeacherProfile";
 
 export type SideMenuContent = Record<
   string,
-  Record<string, React.ComponentType>
+  Record<string, React.ComponentType | null>
 >;
 
 export const teacherMenuSideContent: SideMenuContent = {
@@ -24,10 +26,10 @@ export const studentMenuSideContent: SideMenuContent = {
     Notas: Grades,
   },
   Matricula: {
-    Materias: Login,
-    "Curso extendido": Login,
+    Materias: SignatureSuscribe,
+    "Curso extendido": SignatureSuscribe,
   },
   Docentes: {
-    "Perfil docente": Login,
+    "Perfil docente": TeacherProfile,
   },
 };
