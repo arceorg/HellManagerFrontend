@@ -6,6 +6,7 @@ import React, {
   Dispatch,
   SetStateAction,
 } from "react";
+import { StudentProfile } from "../components/StudentProfile/StudentProfile";
 
 interface MyContextProps {
   context: any;
@@ -24,7 +25,7 @@ interface MyContextProviderProps {
 export const MyContextProvider: React.FC<MyContextProviderProps> = ({
   children,
 }) => {
-  const [context, setContext] = useState<any>(null); // Cambia el tipo según tus necesidades iniciales
+  const [context, setContext] = useState<any>({ view: StudentProfile }); // Cambia el tipo según tus necesidades iniciales
 
   return (
     <MyContext.Provider value={{ context, setContext }}>
