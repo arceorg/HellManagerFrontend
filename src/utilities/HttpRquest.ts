@@ -5,9 +5,11 @@ export const httpRequest = async (url: string, method: string, body?: any, heade
     data: body,
     method,
     url,
-    headers
+    headers,
+    maxBodyLength: Infinity,
+    withCredentials: false,
   };
-
+  console.log(config);  
   try {
     const response: AxiosResponse<any> = await axios(config);
     return response.data;
