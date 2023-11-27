@@ -12,11 +12,11 @@ export type SideMenuContent = Record<
 
 export const teacherMenuSideContent: SideMenuContent = {
   Academico: {
-    Horario: Login,
-    Notas: Login,
+    Horario: TeacherProfile,
+    Notas: TeacherProfile,
   },
   Ajustes: {
-    "Perfil docente": Login,
+    "Perfil docente": TeacherProfile,
   },
 };
 
