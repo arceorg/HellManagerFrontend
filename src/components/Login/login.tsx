@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import "./login.css";
 import { Button } from "react-bootstrap";
+import { MyContext } from "../../context/Provider";
+import useHttp from "../../CustomHooks/UseHttp";
 
-export const Login = () => {
+export const Login : React.FC<{ onLoginSuccess: () => void }> = ({ onLoginSuccess }) => {
+  const { context, setContext } = useContext(MyContext);
+  const handleLogin = (e:React.FormEvent) => {
+    e.preventDefault();
+    console.log(e);
+    //const { data, isLoading, error } = useHttp("auth/login")
+    onLoginSuccess();
+  };
+
   return (
     <main>
       <Form className="login-form">
@@ -39,7 +49,7 @@ export const Login = () => {
           </Col>
         </Form.Group>
         <Form.Group className="text-center">
-          <Button type="submit" className="mt-2">
+          <Button type="submit" className="mt-2" onClick={handleLogin}>
             Ingresar
           </Button>
         </Form.Group>
