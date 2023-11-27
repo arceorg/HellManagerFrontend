@@ -7,9 +7,11 @@ import { Button } from "react-bootstrap";
 import { MyContext } from "../../context/Provider";
 import useHttp from "../../CustomHooks/UseHttp";
 
-export const Login : React.FC<{ onLoginSuccess: () => void }> = ({ onLoginSuccess }) => {
+export const Login: React.FC<{ onLoginSuccess: () => void }> = ({
+  onLoginSuccess,
+}) => {
   const { context, setContext } = useContext(MyContext);
-  const handleLogin = (e:React.FormEvent) => {
+  const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     console.log(e);
     //const { data, isLoading, error } = useHttp("auth/login")

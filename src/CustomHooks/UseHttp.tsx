@@ -9,14 +9,21 @@ const useHttp = (route: string, method: string, initialData?: any) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const token = useContext(MyContext).context.token;
-  const headers = token?{
-    Authorization: `Bearer ${token}`,
-  }: undefined;
+  const headers = token
+    ? {
+        Authorization: `Bearer ${token}`,
+      }
+    : undefined;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const responseData = await httpRequest(baseUrl + route, method, initialData,headers);
+        const responseData = await httpRequest(
+          baseUrl + route,
+          method,
+          initialData,
+          headers,
+        );
         setData(responseData);
       } catch (error) {
         setError("Error al obtener los datos");
